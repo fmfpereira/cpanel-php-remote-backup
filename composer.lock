@@ -1,0 +1,31 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
+        "This file is @generated automatically"
+    ],
+    "content-hash": "5b8cb57f6c0e0d70ce2ca262319239e4",
+    "packages": [
+        {
+            "name": "CpanelInc/xmlapi-php",
+            "version": "master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/CpanelInc/xmlapi-php.git",
+                "reference": "master"
+            },
+            "type": "library",
+            "time": "2015-01-18 14:10:55"
+        }
+    ],
+    "packages-dev": [],
+    "aliases": [],
+    "minimum-stability": "stable",
+    "stability-flags": {
+        "cpanelinc/xmlapi-php": 20
+    },
+    "prefer-stable": false,
+    "prefer-lowest": false,
+    "platform": [],
+    "platform-dev": []
+}

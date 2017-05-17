@@ -1,0 +1,22 @@
+{
+  "repositories": [
+    {
+      "type":"package",
+      "package": {
+        "name": "CpanelInc/xmlapi-php",
+        "version":"master",
+        "source": {
+          "url": "https://github.com/CpanelInc/xmlapi-php.git",
+          "type": "git",
+          "reference":"master"
+        }
+      }
+    }
+  ],
+  "require": {
+    "CpanelInc/xmlapi-php": "dev-master"
+  },
+  "autoload": {
+    "files": ["vendor/CpanelInc/xmlapi-php/xmlapi.php"]
+  }
+}

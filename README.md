@@ -9,7 +9,7 @@ or scp server.
 - [Requirements](#requirements)
 - [Installation](#installation)
 - [Usage](#usage)
-- [Known limitations](#known limitations)
+- [Known limitations](#known-limitations)
 - [Support](#support)
 - [Contributing](#contributing)
 

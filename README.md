@@ -53,7 +53,7 @@ composer install
 - At the moment this README was made, the [cPanel xmlapi-php PHP Class](https://github.com/CpanelInc/xmlapi-php) releases 
 are too old. Since xmlapi-php does not provide a composer.json, this project composer configuration will fetch last commit from 
 dev-master branch and register xmlapi.php Class for auto loading.
-If you find any problem regarding to the xmlapi-php Class please [open an issue](https://github.com/fmfpereira/cpanel-php-remote-backup/issues/new)
+If you find any problem regarding to the xmlapi-php Class, please [open an issue](https://github.com/fmfpereira/cpanel-php-remote-backup/issues/new)
 or try to use an older version. The [cPanel xmlapi-php PHP Class](https://github.com/CpanelInc/xmlapi-php) commit used was b9593c7, from 18 Jan 2015.
 - The [cPanel xmlapi-php PHP Class](https://github.com/CpanelInc/xmlapi-php) uses the [deprecated cPanel API 1](https://documentation.cpanel.net/display/SDK/cPanel+API+1+Functions+-+Fileman%3A%3Afullbackup). However, no equivalent backup function exists in newer APIs.
 

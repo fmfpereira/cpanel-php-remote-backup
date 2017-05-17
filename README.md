@@ -57,14 +57,14 @@ Since xmlapi-php does not provide a composer.json, this project composer configu
 If you find any problem regarding to the xmlapi-php Class, please [open an issue](https://github.com/fmfpereira/cpanel-php-remote-backup/issues/new) or try to use an older version. 
 The [cPanel xmlapi-php PHP Class](https://github.com/CpanelInc/xmlapi-php) commit used was b9593c7, from 18 Jan 2015.
 - The [cPanel xmlapi-php PHP Class](https://github.com/CpanelInc/xmlapi-php) uses the [deprecated cPanel API 1](https://documentation.cpanel.net/display/SDK/cPanel+API+1+Functions+-+Fileman%3A%3Afullbackup). However, no equivalent backup function exists in newer APIs.
-- Here are some common problems:
+- Some common problems:
     - xmlapi-php Class returns success but the backup is not transferred to ftp server.
         - It's most likely that the generation process got stuck on cPanel.
     - xmlapi-php Class returns "Can't call method "login" on an undefined value" message.
         - It's most likely that the ftp transfer has been blocked. Some hosting providers only allow ftp backup transfers at a certain period of the day.
-- In this cases try to manually run the backup generation/transfer on cPanel interface. 
-    - If you get the same error try to contact to hosting provider.
-    - If you are able to generate and transfer backup via cPanel and it fails with cPanel-php-remote-backup please open a [open an issue](https://github.com/fmfpereira/cpanel-php-remote-backup/issues/new) for support
+    - In this cases try to manually run the backup generation/transfer on cPanel interface. 
+        - If you get the same error, try to contact to hosting provider.
+        - If you are able to generate and transfer backup via cPanel and it fails with cPanel-php-remote-backup script, please [open an issue](https://github.com/fmfpereira/cpanel-php-remote-backup/issues/new) for support.
 
 ## Support
 

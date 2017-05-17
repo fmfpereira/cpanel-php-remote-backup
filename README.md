@@ -40,12 +40,12 @@ composer install
 ## Usage
 
 - Rename or copy example.settings.php to settings.php.
-- Edit the new settings.php file and fill cPanel and remote ftp server settings.
+- Edit the new settings.php file and fill the cPanel and remote ftp server settings.
 - Test configuration and backup generation:
     ```sh
     php cpanel-remote-ftp-backup.php
     ```
-    - If everything goes ok the script will end without any message, otherwise you will receive an error.
+    - If everything goes ok, the script will end without any message, otherwise you will receive an error.
 - Schedule script execution to the cron table.
 
 ## Known limitations

@@ -16,7 +16,7 @@ try {
     $xmlapi->password_auth($settings["cpanel_username"], $settings["cpanel_password"]);
     $xmlapi->set_port($settings["cpanel_port"]);
     $xmlapi->set_output('json');
-    $xmllapi_args = array(
+    $xmlapi_args = array(
         $settings["ftp_mode"],
         $settings["ftp_host"],
         $settings["ftp_username"],
@@ -25,7 +25,7 @@ try {
         $settings["ftp_port"],
         $settings["ftp_path"]
     );
-    $xmlapi_response = $xmlapi->api1_query($settings["cpanel_username"], 'Fileman', 'fullbackup', $xmllapi_args);
+    $xmlapi_response = $xmlapi->api1_query($settings["cpanel_username"], 'Fileman', 'fullbackup', $xmlapi_args);
     $response = json_decode($xmlapi_response, true);
     /*
      * Check if cPanel sent a response result.
@@ -34,14 +34,21 @@ try {
         throw new Exception("Unable to parse response from cPanel host");
     }
     /*
+     * If response returns error.
+     */
+    if (!empty($response["error"])) {
+        throw new Exception($response["error"]);
+    }
+    /*
      * If response result is empty everything worked as expected, else throw error message exception.
      */
     if (!empty($response["data"]["result"])) {
         throw new Exception($response["data"]["result"]);
     }
+
 } catch (Exception $ex) {
     /*
      * Exit with exception error.
      */
-    exit(sprintf("Error: %s", $ex->getMessage()));
+    exit(sprintf("Error: %s\n", htmlspecialchars_decode($ex->getMessage(), ENT_QUOTES)));
 }
